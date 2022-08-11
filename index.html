@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <Link rel="icon"; href="bezaleel.ico" />
+    <title>Healz muzikWeb</title>
+    <Link rel="stylesheet" href="style.css"/>
+     
+
+</head>
+<body>
+    <div class="hero">
+    <div class="navbar">
+        <img src="boy2.jpg"  class="logo" >
+        <p>HEALZJOE </p>
+        <ul>
+       <li><a href="#">HOME</a></li>
+       <li> <a href="#">ABOUT</a></li>
+       <li><a href="#">NEW SONG</a></li>
+       <li><a href="#">ALBUM</a></li>
+       <li><a href="#">CONTACT</a></li>
+
+</div>
+<div class="content"></div>
+<div class="left">
+    <h1>THE <br> REAL<br> SOUND &#8594;&#128512;</h1>
+    <hr>
+   
+</div>
+<div class="right">  <pan>Click to Play</pan>
+    <img  src="media/play.png" id="icon" />
+</div>  
+<audio id="mysong">
+    <source src="media/grace.mp3" type="audio/mp3" /> 
+</audio>
+
+<script>
+    var mysong= document.getElementById ("mysong");
+    var icon= document.getElementById ("icon");
+    icon.onclick= function(){
+        if(mysong.paused == true){
+            mysong.play();
+            icon.src="media/pause1.png";
+        }
+        else {
+            mysong.pause();
+            icon.src='media/play.png'
+
+        }
+        
+    }
+</script>
+<div class="net">
+    
+</div>
+ 
+
+  
+    
+
+
+
+</body>
+</html>
